@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_instance" "abhishek" {
   instance_type = "t2.micro"
-  ami = "ami-053b0d53c279acc90" # change this
-  subnet_id = "subnet-019ea91ed9b5252e7" # change this
+  ami = "ami-08718895af4dfa033" # change this
+  subnet_id = "subnet-03786bc2be3e36d1f" # change this
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
